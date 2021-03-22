@@ -97,3 +97,9 @@ h1{
 }
 /* /Site Main css */
 
+/* Site Footer css */
+#site_footer > h3{
+    margin-bottom: 40px;
+}
+/* /Site Footer css */
+
