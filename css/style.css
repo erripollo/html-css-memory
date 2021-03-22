@@ -9,15 +9,91 @@ body{
     font-family: 'Nerko One', cursive;
 }
 
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .container{
     width: 60%;
-    background-color: lightseagreen;
     margin: auto;
     text-align: center;
 }
 
+/* Site Header css */
 h1{
     color: white;
     font-size: 5rem;
     text-transform: uppercase;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
 }
+/* /Site Header css */
+
+/* Site Main css */
+.card{
+    float: left;
+    width: calc(100% / 4 - 20px);
+    margin: 0 10px;
+    height: 230px;
+    background-image: url('../img/pattern.png');
+    background-size: contain;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card_front{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.card_front > img{
+    width: 80%;
+    margin-top: 15px;
+}
+
+.card_front > h2{
+    font-size: 2rem;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.air_baloon{
+    color: #e61a86;
+}
+
+.bicycle{
+    color: green;
+}
+
+.cruise_ship{
+    color: blue;
+}
+
+.submarine{
+    color: yellow;
+}
+
+.tram{
+    color: brown;
+}
+
+.tractor{
+    color: red;
+}
+
+.hidden{
+    display: none;
+}
+
+.card:hover .card_front{
+    cursor: pointer;
+    display: block;
+}
+/* /Site Main css */
+
