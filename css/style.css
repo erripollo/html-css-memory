@@ -6,4 +6,18 @@
 
 body{
     background-color: #add8e6;
+    font-family: 'Nerko One', cursive;
+}
+
+.container{
+    width: 60%;
+    background-color: lightseagreen;
+    margin: auto;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    font-size: 5rem;
+    text-transform: uppercase;
 }
